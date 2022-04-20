@@ -1,0 +1,36 @@
+class Styles:
+    clear = '\33[m'
+    def __init__(self, tipo):
+        if tipo == 0:
+            self.black = '\33[30m'
+            self.red = '\33[31m'
+            self.green = '\33[32m'
+            self.yellow = '\33[33m'
+            self.blue = '\33[34m'
+            self.purple = '\33[35m'
+            self.cyan = '\33[36m'
+            self.grey = '\33[37m'
+            self.white = '\33[97m'
+
+            self.darkgrey = '\33[90m'
+            self.bred = '\33[91m'
+            self.bgreen = '\33[92m'
+            self.byellow = '\33[93m'
+            self.bblue = '\33[94m'
+            self.bpurple = '\33[95m'
+            self.bcyan = '\33[96m'
+        elif tipo == 1:
+            self.white = '\33[107m'
+            self.black = '\33[40m'
+            self.red = '\33[101m'
+            self.green = '\33[102m'
+            self.yellow = '\33[103m'
+            self.blue = '\33[104m'
+            self.purple = '\33[105m'
+            self.cyan = '\33[106m'
+        elif tipo == 2:
+            self.plain = '\33[10m'
+            self.out = '\33[52m'
+            self.bold = '\33[1m'
+            self.italic = '\33[3m'
+            self.under = '\33[4m'
